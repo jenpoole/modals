@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    
+    <style>
+        
+        .modal {
+            text-align: center;
+        }
+        
+        .modal-dialog {
+            width: 400px;
+            margin: 0 auto;
+        }
+        
+/*
+        .modal-header .modal-header-info {
+            background: red important!;
+        }
+*/
+        
+        .modal-footer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+   
+   <br><br>
+    
+    <!-- Button modal fullscreen -->
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-fullscreen">
+  Click Here
+</button>
+
+<!-- Modal fullscreen -->
+<div class="modal modal-fullscreen fade" id="modal-fullscreen" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+     
+      <div class="modal-header modal-header-info">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Your Text: Nice shoes! Add some socks...</h4>
+      </div> <!-- .modal-header -->
+      
+      <div class="modal-body">
+        <div class="box">
+            <h4>3rd Edition Socks</h4>
+            <h5>$99.00</h5>
+            <img src="" alt="your image here">
+        </div>
+      </div> <!-- .modal-body -->
+      
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Skip this product</button>
+        <button type="button" class="btn btn-success">Add to my cart</button>
+        
+      </div> <!-- .modal-footer -->
+      
+    </div> <!-- .modal-content -->
+  </div> <!-- .modal-dialog -->
+</div> <!-- .modal .modal-fullscreen -->
+    
+    
+   <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
